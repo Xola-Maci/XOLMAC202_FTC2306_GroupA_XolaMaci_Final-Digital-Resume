@@ -3,29 +3,232 @@
     padding: 0;
 }
 
-body{
-    background-color: #DFEDF4;
-}
-
+/*=======Header======*/
 .Hero{
-    background-color: #3A88A2;
+    background: #3A88A2;
     text-align: center;
     justify-content: center;
     font-family: 'Times New Roman', Times, serif;
     padding: 30px;
 }
 
+header h2, header p{
+    color: rgb(65, 36, 1);
+    font-weight: bolder;
+    border-bottom: 4px solid black;
+    padding-bottom: 10px;
+}
+
+
+header a{
+    color: black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+header img{
+text-align: center;
+position: relative;
+
+}
+
+/*-----Changes on the whole page-------*/
 img{
     border-radius: 50%;
 }
 
-#profile{
-    border-radius: 0;
+ul, li{
+    list-style: none;
 }
 
-.navigation{
+h2{
+    font-size: 150%;
+    padding: 20px;
+}
+
+h3, h4{
+padding: 10px;
+text-align: justify;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(1, 87, 47);
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+#profile{
+    border-radius: 10%;
+}
+
+/*=======Navigation======*/
+#navigation{
+    background-color: rgb(30, 26, 34);
+    color: white;
+    text-align: center;
+    z-index: 1;
+    position: sticky;
+    margin: 0px;
+    top: 0px;
+}
+
+.link-nav{
+    text-decoration: none;
+    color:white;
+    margin: 0 4vw;
+}
+
+.link-nav:hover{
+    text-decoration: none;
+    color: #10d197;
+}
+
+/*======Body======*/
+
+body{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.detailed-content{
+    background: #ADC5CF;
+    padding: 20px;
+    border: 5px solid purple;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    padding: 2px;
+    padding-bottom: 2px;
+}
+
+
+/*=======Footer=========*/
+footer{
+    background-color: #3A88A2;
+    padding: 0px;
+}
+
+#email-logo{
+    border-radius: 0;
+    width: 70px;
+}
+
+label{
     display: flex;
-    background: #3e324d;
-    color: #DFEDF4;
+    flex-direction: row;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    text-align:justify;
+    font-weight: bold;
+    padding: 5px;
+}
+
+input, textarea, select{
+    vertical-align: bottom;
     padding: 10px;
+    width: 400px;
+    height: 10px;
+}
+
+span{
+    display: flex;
+    padding-bottom: 10px;
+    padding: 10px;
+}
+
+button{
+    color: black;
+    background-color: #ADC5CF;
+    padding: 5px;
+}
+.form{
+    margin: auto;
+    position: relative;
+    padding-bottom: 20px;
+    right: 5%;
+    display:grid;
+    width: 100px;
+    bottom: 200px;
+    
+}
+/*======CSS grid========*/
+
+main {
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "section navigation"
+    "footer footer";
+    grid-template-rows: 1fr 60px;
+    grid-template-columns: 1fr 15%;
+    grid-gap: 10px;
+    height: 373vh;
+    margin: 0;
+    }
+    
+    header, footer, section, aside {
+        padding: 20px;
+      }
+    
+      #Hero {
+        grid-area: header;
+      }
+      #footer {
+        grid-area: footer;
+      }
+      #detailed-content { 
+        grid-area: section;      
+        }
+      #navigation { 
+        grid-area: aside; 
+        }
+
+/*=======Responsive Design======*/
+
+@media screen and (max-width:425px) {
+    .Hero{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    header p, header h1{
+        font-size: 2.5rem;
+        left: 10%;
+        font-weight: bold;
+        text-align: center;
+
+    }
+
+    #navigation{
+        padding-left: 10px;
+        display: block;
+    }
+
+    .detailed-content{
+        display: flex ;
+        flex-direction: column;
+        justify-content: center;
+        text-align: justify;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: auto;
+
+    }
+
+}
+
+
+@media screen and (max-width:700px) {
+    
 }

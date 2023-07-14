@@ -9,28 +9,30 @@
         <link rel="stylesheet" href="/CSS/resume-styling.css">
     </head>
 
+    
+
     <body>
+            <nav id="navigation">
+                <a class="link-nav" href="#education">Education</a>
+                <a class="link-nav" href="#work-experience">Work Experience</a>
+                <a class="link-nav" href="#skills-tools">Skills and Tools</a>
+            </nav>
+
         <header class="Hero">
             <picture>
+                <source srcset="imagefolder/Small-Img(P).jpg" media="(max-width: 425px)">
+                <source srcset="imagefolder/Medium-Img(T).jpg" media="(max-width: 700px)">
                 <img id="profile" src="/imagefolder/IMG-20220917-WA0077.jpg" alt="Picture of Xola" width="200px" height="200px">
             </picture>
             <h1>XOLA MACI</h1>
-            <h2>Software Developer Student</h2>
+            <h2>Software Development Student</h2>
             <p> Highly motivated professional with an advanced diploma in Chemical Engineering and a strong foundation in process optimization and engineering principles. Currently pursuing a software development course to expand expertise and contribute to cutting-edge technological solutions. Seeking a position that merges my background in chemical engineering with newfound programming skills to drive innovation and deliver exceptional software solutions in a dynamic and challenging environment</p>
-            <a href="#contact me">Contact Me</a>
+        
+            <a href="#contact-info">Contact Me</a>
             <a href="https://github.com/Xola-Maci/XOLMAC202_FTC2306_GroupA_XolaMaci" target="_blank"><img src="/imagefolder/github.png" alt="githu account" width="40px"></a>
         </header>
 
         <section>
-           <div class="navigation">
-            <aside>
-                <a href="#contact me">Contact Info</a>
-                <a href="#education">Education</a>
-                <a href="#work experience">Work Experience</a>
-                <a href="#Skills&Tools">Skills and Tools</a>
-            </aside>
-           </div>
-
 
             <div class="detailed-content">
                 <article>
@@ -62,21 +64,21 @@
                         the school.
                     </p>
 
-                    <h2 id="work experience">Work Experience</h2>
-                    <h3>Takealot, Oct 2021 - Feb 2022</h3>
+                    <h2 id="work-experience">Work Experience</h2>
+                    <h3>Takealot</h3>
                     <ul>
                         <li>I was responsible of attending to customer complaints</li>
                         <li>Resolving customer complaints and making sure their needs are met peacefully and making sure they are happy.</li>
                     </ul>
 
-                    <h3>PetroSA, Feb 2020 - July 2021 </h3>
+                    <h3>PetroSA</h3>
                     <Ul>
                         <li>I was responsible for monitoring and analyzing a unit in the refinery</li>
                         <li>Material and energy balance calculations for the unit</li>
                         <li>learnt how most of the plant equipment is operated.</li>
                     </Ul>
 
-                    <div id="Skills&Tools" class="Skills&Tools">
+                    <div id="skills-tools" class="skills-tools">
                         <h2>Skills and Tools</h2>
                         <div class="skills">
                             <h4>HTML</h4>
@@ -84,10 +86,10 @@
                         <div class="skills">
                             <h4>CSS</h4>
                         </div>
-                        <div class="tools">
+                        <div class="skills">
                             <h4>VSCode</h4>
                         </div>
-                        <div class="tools">
+                        <div class="skills">
                             <h4>GitHub</h4>
                         </div>
 
@@ -100,19 +102,44 @@
 
         <footer>
             <div class="Contact">
-                <h2 id="Contact me">Contact Info</h2>
+                <h2 id="contact-info">Contact Info</h2>
                 <span>
                     <a href="https://github.com/Xola-Maci/XOLMAC202_FTC2306_GroupA_XolaMaci" target="_blank"><img src="/imagefolder/github.png" alt="githu account" width="40px"></a>
                 </span>
 
                 <span>
-                   <img src="/imagefolder/Gmail.png" alt="email address" width="90px"><span>:xolaamyoli@gmail.com</span>
+                   <img id="email-logo" src="/imagefolder/Gmail.png" alt="email address" width="90px"><span>:xolaamyoli@gmail.com</span>
                 </span>
 
                 <span>
                     <a href="https://www.linkedin.com/in/xola-maci-b58847163/" target="_blank"><img src="/imagefolder/linkedin.png" alt="linkedin" width="50px"></a>
                 </span>
             </div>
+            
+            <div class="form">
+            <form action="https://formsubmit.co/f2c59fee76bd4366cc47369d14903dfb" method="POST">
+                <div class="contact-form">
+                    <label for="reason-for-contacting">Reason:</label>
+                    <select id="Subject">
+                        <option value="subject">Select a subject</option>
+                        <option value="general enquiry">General enquiry</option>
+                        <option value="service request">Service Request</option>
+                        <option value="career opportunities">Career opportunities</option>
+                        <option value="other">Other</option>
+                    </select><br><br>
+                </div>
+
+                <label for="name">Name</label>
+                <input type="name" id="name" name="name" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+              
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea><br><br>
+              
+                <input type="hidden" name="_next" value="Thank you for submitting your enquiry">
+                <div><button type="submit">Submit</button></div>
+              </form></footer></div>
             
         </footer>
     </body>
