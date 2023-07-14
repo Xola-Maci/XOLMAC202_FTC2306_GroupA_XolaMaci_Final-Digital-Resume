@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #DFEDF4;
+}
+
+.Hero{
+    background-color: #3A88A2;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 30px;
+}
+
+img{
+    border-radius: 50%;
+}
+
+#profile{
+    border-radius: 0;
+}
+
+.navigation{
+    display: flex;
+    background: #3e324d;
+    color: #DFEDF4;
+    padding: 10px;
+}
