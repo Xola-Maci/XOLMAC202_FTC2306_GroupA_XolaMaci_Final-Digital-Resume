@@ -1,10 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
 /*=======Header======*/
-.Hero{
+.Hero {
     background: #3A88A2;
     text-align: center;
     justify-content: center;
@@ -12,61 +12,59 @@
     padding: 30px;
 }
 
-header h2, header p{
+header h2,
+header p {
     color: rgb(65, 36, 1);
     font-weight: bolder;
     border-bottom: 4px solid black;
     padding-bottom: 10px;
 }
 
-
-header a{
+header a {
     color: black;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: large;
     padding-top: 10px;
-    display: flex;
-    flex-direction: column;
-}
-
-header img{
-text-align: center;
-position: relative;
-
+    display: inline-flex;
+    flex-direction: row;
 }
 
 /*-----Changes on the whole page-------*/
-img{
+img {
     border-radius: 50%;
 }
 
-ul, li{
+ul,
+li {
     list-style: none;
+    padding: 10px;
 }
 
-h2{
+h2 {
     font-size: 150%;
     padding: 20px;
 }
 
-h3, h4{
-padding: 10px;
-text-align: justify;
+h3,
+h4 {
+    padding: 10px;
+    text-align: justify;
 }
 
-a{
+a {
     text-decoration: none;
     color: rgb(1, 87, 47);
     font-weight: bold;
     font-family: sans-serif;
 }
 
-#profile{
+#profile {
     border-radius: 10%;
+
 }
 
 /*=======Navigation======*/
-#navigation{
+#navigation {
     background-color: rgb(30, 26, 34);
     color: white;
     text-align: center;
@@ -74,27 +72,28 @@ a{
     position: sticky;
     margin: 0px;
     top: 0px;
+    padding: 5px;
 }
 
-.link-nav{
+.link-nav {
     text-decoration: none;
-    color:white;
+    color: white;
     margin: 0 4vw;
 }
 
-.link-nav:hover{
+.link-nav:hover {
     text-decoration: none;
     color: #10d197;
 }
 
 /*======Body======*/
 
-body{
+body {
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.detailed-content{
+.detailed-content {
     background: #ADC5CF;
     padding: 20px;
     border: 5px solid purple;
@@ -109,96 +108,107 @@ p {
 
 
 /*=======Footer=========*/
-footer{
+footer {
     background-color: #3A88A2;
     padding: 0px;
 }
 
-#email-logo{
+#email-logo {
     border-radius: 0;
     width: 70px;
 }
 
-label{
+label {
     display: flex;
     flex-direction: row;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
-    text-align:justify;
+    text-align: justify;
     font-weight: bold;
     padding: 5px;
 }
 
-input, textarea, select{
+input,
+textarea,
+select {
     vertical-align: bottom;
     padding: 10px;
     width: 400px;
     height: 10px;
 }
 
-span{
+span {
     display: flex;
     padding-bottom: 10px;
     padding: 10px;
 }
 
-button{
+button {
     color: black;
     background-color: #ADC5CF;
     padding: 5px;
 }
-.form{
+
+.form {
     margin: auto;
     position: relative;
     padding-bottom: 20px;
     right: 5%;
-    display:grid;
+    display: grid;
     width: 100px;
     bottom: 200px;
-    
+
 }
+
 /*======CSS grid========*/
 
 main {
     display: grid;
-    grid-template-areas: 
-    "header header"
-    "section navigation"
-    "footer footer";
+    grid-template-areas:
+        "header header"
+        "section navigation"
+        "footer footer";
     grid-template-rows: 1fr 60px;
     grid-template-columns: 1fr 15%;
     grid-gap: 10px;
     height: 373vh;
     margin: 0;
-    }
-    
-    header, footer, section, aside {
-        padding: 20px;
-      }
-    
-      #Hero {
-        grid-area: header;
-      }
-      #footer {
-        grid-area: footer;
-      }
-      #detailed-content { 
-        grid-area: section;      
-        }
-      #navigation { 
-        grid-area: aside; 
-        }
+}
+
+header,
+footer,
+section,
+aside {
+    padding: 20px;
+}
+
+#Hero {
+    grid-area: header;
+}
+
+#footer {
+    grid-area: footer;
+}
+
+#detailed-content {
+    grid-area: section;
+}
+
+#navigation {
+    grid-area: aside;
+}
 
 /*=======Responsive Design======*/
 
 @media screen and (max-width:425px) {
-    .Hero{
+    .Hero {
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
 
-    header p, header h1{
+    header p,
+    header h1 {
         font-size: 2.5rem;
         left: 10%;
         font-weight: bold;
@@ -206,19 +216,19 @@ main {
 
     }
 
-    #navigation{
+    #navigation {
         padding-left: 10px;
         display: block;
     }
 
-    .detailed-content{
-        display: flex ;
+    .detailed-content {
+        display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: justify;
     }
 
-    footer{
+    footer {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -230,5 +240,44 @@ main {
 
 
 @media screen and (max-width:700px) {
-    
+
+    .Hero {
+        background-size: auto;
+        margin: auto;
+        position: sticky;
+    }
+
+    header p,
+    header h1 {
+        font-size: 100%;
+        left: 10%;
+        font-weight: bold;
+
+    }
+
+    h2,
+    h3 {
+        font-style: italic;
+        font-display: inherit;
+    }
+
+    .side-menu {
+        font-style: oblique;
+        padding-left: 20px;
+        display: block;
+    }
+
+    .detailed-content {
+        padding-left: 30px;
+        display: block;
+    }
+
+    .footer {
+        padding: auto;
+
+        footer form {
+            padding: 7px;
+            left: 20%;
+        }
+    }
 }
